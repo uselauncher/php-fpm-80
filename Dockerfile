@@ -1,6 +1,6 @@
 # https://github.com/uselauncher/php-fpm-80
 # https://hub.docker.com/r/uselauncher/php-fpm-80
-FROM php:8.0-fpm
+FROM php:8.0-fpm-buster
 
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
 
