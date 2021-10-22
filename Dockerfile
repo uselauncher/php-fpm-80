@@ -25,7 +25,7 @@ RUN set -ex \
   && npm install -g yarn svgo \
   \
   # Install PHP extensions
-  && install-php-extensions bcmath dom exif gd intl imagick pdo_mysql pdo_pgsql pcntl redis soap simplexml tokenizer zip \
+  && install-php-extensions bcmath dom exif gd intl imagick mysqli pdo_mysql pdo_pgsql pcntl redis soap simplexml tokenizer zip \
   \
   # Clear cache
   && apt-get clean && rm -rf /var/lib/apt/lists/* \
